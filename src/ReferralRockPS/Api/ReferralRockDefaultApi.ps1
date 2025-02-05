@@ -1154,7 +1154,7 @@ function Invoke-ReferralRockApiMembersGet {
         if ($WithHttpInfo.IsPresent) {
             return $LocalVarResult
         } else {
-            return $LocalVarResult["Response"]
+            return $LocalVarResult["Response"].members
         }
     }
 }
@@ -1801,7 +1801,7 @@ function Invoke-ReferralRockApiPayoutsTransactionsGet {
         if ($WithHttpInfo.IsPresent) {
             return $LocalVarResult
         } else {
-            return $LocalVarResult["Response"]
+            return $LocalVarResult["Response"].payoutTransactions
         }
     }
 }
@@ -2187,7 +2187,7 @@ function Invoke-ReferralRockApiProgramsGet {
         if ($WithHttpInfo.IsPresent) {
             return $LocalVarResult
         } else {
-            return $LocalVarResult["Response"]
+            return $LocalVarResult["Response"].programs
         }
     }
 }
@@ -2631,7 +2631,7 @@ function Invoke-ReferralRockApiReferralsGet {
         if ($WithHttpInfo.IsPresent) {
             return $LocalVarResult
         } else {
-            return $LocalVarResult["Response"]
+            return $LocalVarResult["Response"].referrals
         }
     }
 }
@@ -3065,7 +3065,7 @@ function Invoke-ReferralRockApiRewardsGet {
         if ($WithHttpInfo.IsPresent) {
             return $LocalVarResult
         } else {
-            return $LocalVarResult["Response"]
+            return $LocalVarResult["Response"].rewards
         }
     }
 }
